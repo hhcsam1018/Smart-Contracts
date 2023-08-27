@@ -6,14 +6,39 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "id",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "_balances",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,17 +52,22 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "score",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "update",
+				"name": "_transfer",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -56,7 +86,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/remix-tests/bankaccount.sol": "Class"
+			".deps/remix-tests/Event.sol": "Events"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -70,12 +100,12 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/remix-tests/bankaccount.sol": {
-			"keccak256": "0xbf5961ea2f8c889f1068cbbf85c6a4b146eb57fa666e3d641848bfbcbf82b391",
+		".deps/remix-tests/Event.sol": {
+			"keccak256": "0x3de6109d7c14206165569b3d9216acf1b302160275bb1c6b57803d96ee542e99",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4360808bc6d4836978e984cfd322d3ff93d07e060841a578ecf6d63dca45bf9",
-				"dweb:/ipfs/Qmeh6n3NQED5h7WwfDEJck3bKYfkEs5r7h5aK7FfkzKBWD"
+				"bzz-raw://f8e7736b1bc9a0ed8c6fd9e5c927723f9dc66513ecb0da1a4d55c324a4eb4ea2",
+				"dweb:/ipfs/QmVohqo8ydEUD2uphvLmt3gVHeGHcGe3ZeTa1S9qSt5q1i"
 			]
 		}
 	},

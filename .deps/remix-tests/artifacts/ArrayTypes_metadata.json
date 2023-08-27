@@ -7,12 +7,25 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "hi",
+				"name": "arrayPush",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256[]",
 						"name": "",
-						"type": "string"
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "initArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
 					}
 				],
 				"stateMutability": "pure",
@@ -32,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/remix-tests/bankaccount.sol": "Hello"
+			".deps/remix-tests/ArrayAndStruct.sol": "ArrayTypes"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/remix-tests/bankaccount.sol": {
-			"keccak256": "0xbf5961ea2f8c889f1068cbbf85c6a4b146eb57fa666e3d641848bfbcbf82b391",
+		".deps/remix-tests/ArrayAndStruct.sol": {
+			"keccak256": "0x985db84767d365d7969aef5b184c9614c7f20f2d8f31909a8036b08dd07725f5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4360808bc6d4836978e984cfd322d3ff93d07e060841a578ecf6d63dca45bf9",
-				"dweb:/ipfs/Qmeh6n3NQED5h7WwfDEJck3bKYfkEs5r7h5aK7FfkzKBWD"
+				"bzz-raw://3a7026dc94929728842159414a8d54ba588de16030a9109c33bc122442954ab7",
+				"dweb:/ipfs/QmZtXSA4DELqt68w6E9db2KwX9c1N3pv3zJC6yznASArft"
 			]
 		}
 	},

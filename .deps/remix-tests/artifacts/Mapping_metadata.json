@@ -9,16 +9,35 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "id",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"name": "idToAddress",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "swapPair",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -28,16 +47,16 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "id",
+						"name": "_Key",
 						"type": "uint256"
 					},
 					{
-						"internalType": "uint256",
-						"name": "score",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_Value",
+						"type": "address"
 					}
 				],
-				"name": "update",
+				"name": "writeMap",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -56,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/remix-tests/bankaccount.sol": "Class"
+			".deps/remix-tests/Mapping.sol": "Mapping"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -70,12 +89,12 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/remix-tests/bankaccount.sol": {
-			"keccak256": "0xbf5961ea2f8c889f1068cbbf85c6a4b146eb57fa666e3d641848bfbcbf82b391",
+		".deps/remix-tests/Mapping.sol": {
+			"keccak256": "0xb71873ce245bdaedb58d4573a6add892fa326d999483bfbee20ebc6e9b65fb9f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4360808bc6d4836978e984cfd322d3ff93d07e060841a578ecf6d63dca45bf9",
-				"dweb:/ipfs/Qmeh6n3NQED5h7WwfDEJck3bKYfkEs5r7h5aK7FfkzKBWD"
+				"bzz-raw://73933df2a86ea0b3dbf2e46c6631f5e1b768757c82210bf3e4b43675512ac36a",
+				"dweb:/ipfs/QmVvagJtwX43vEucyftyiov1LwtoqMQLZ62K3pZGkNZ6dQ"
 			]
 		}
 	},

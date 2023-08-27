@@ -6,13 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "hi",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getAccount",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "address",
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
 				"stateMutability": "pure",
@@ -32,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/remix-tests/bankaccount.sol": "Hello"
+			".deps/remix-tests/remix_accounts.sol": "TestsAccounts"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/remix-tests/bankaccount.sol": {
-			"keccak256": "0xbf5961ea2f8c889f1068cbbf85c6a4b146eb57fa666e3d641848bfbcbf82b391",
-			"license": "MIT",
+		".deps/remix-tests/remix_accounts.sol": {
+			"keccak256": "0xab088ffd1cd1033f54c2486f151b5d02281a3b76724c8e6f48479c25a4f7809e",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d4360808bc6d4836978e984cfd322d3ff93d07e060841a578ecf6d63dca45bf9",
-				"dweb:/ipfs/Qmeh6n3NQED5h7WwfDEJck3bKYfkEs5r7h5aK7FfkzKBWD"
+				"bzz-raw://5ddaf9976b1838f7028cbedfaf7f6e1cf8c898e100221176ff1406ee8b599f23",
+				"dweb:/ipfs/QmX2FYLXYyo5Cn55ZX2CfngpscSh4mQhcMVzQdQsh2vqcG"
 			]
 		}
 	},

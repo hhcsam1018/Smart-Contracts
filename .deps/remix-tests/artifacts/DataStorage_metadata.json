@@ -8,12 +8,45 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256[]",
+						"name": "_x",
+						"type": "uint256[]"
+					}
+				],
+				"name": "fCalldata",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fMemory",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fStorage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
-						"name": "id",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"name": "x",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -22,24 +55,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "score",
-						"type": "uint256"
-					}
-				],
-				"name": "update",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -56,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/remix-tests/bankaccount.sol": "Class"
+			".deps/remix-tests/DataStorage.sol": "DataStorage"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -70,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/remix-tests/bankaccount.sol": {
-			"keccak256": "0xbf5961ea2f8c889f1068cbbf85c6a4b146eb57fa666e3d641848bfbcbf82b391",
+		".deps/remix-tests/DataStorage.sol": {
+			"keccak256": "0x6ce90e39b61c65f76230d6305efd6d79bbdea36fcd63a57d6f85cd03f001f484",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4360808bc6d4836978e984cfd322d3ff93d07e060841a578ecf6d63dca45bf9",
-				"dweb:/ipfs/Qmeh6n3NQED5h7WwfDEJck3bKYfkEs5r7h5aK7FfkzKBWD"
+				"bzz-raw://8b048a86f28866388d03a4c193630b75b2226c9ee9d909f4183ddf9a0b0fdc2b",
+				"dweb:/ipfs/QmWbw31fRkV1kcBCtuX7K72fS3hK4ALQCSFHUDTos4bw78"
 			]
 		}
 	},
