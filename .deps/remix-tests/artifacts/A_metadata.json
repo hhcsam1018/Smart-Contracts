@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "a",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/remix-tests/Inheritance.sol": "A"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/remix-tests/Inheritance.sol": {
+			"keccak256": "0xe93c5848cc09271b8e6d68c6c4c0b0a0175991723fb53613c2bc3996702fe27d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ab14af6aa56d199ba5b0620d601b443c9d4dbc0ee96585a143804e7555984835",
+				"dweb:/ipfs/QmPDDysH1usTtnggiSbHXEBpfE7TW8LtfYqdYXk2wXXqC1"
+			]
+		}
+	},
+	"version": 1
+}

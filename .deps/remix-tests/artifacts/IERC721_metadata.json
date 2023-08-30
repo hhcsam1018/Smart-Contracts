@@ -251,6 +251,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "from",
 						"type": "address"
@@ -274,7 +293,11 @@
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -285,7 +308,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/remix-tests/NFT.sol": "IERC721"
+			".deps/remix-tests/Interface.sol": "IERC721"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -299,12 +322,20 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/remix-tests/NFT.sol": {
-			"keccak256": "0x034c6ada0f6e880b5c00daa4764a9ba0b6df75c540018f2275eab372ab11d1ce",
+		".deps/remix-tests/Interface.sol": {
+			"keccak256": "0xdaf4d038cfbfcd73cb710df96acd07f0b4091d1f55ae8f0589bc508ac56eb21a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://212ee9722efb9f9135e3b0d99b1da5463e69fad3d9c55d22602c02a642e2c8dc",
-				"dweb:/ipfs/QmRhfWkh8ioD1DfdzuJZT5UQJB1NuzpEDzf23NxAdJpHge"
+				"bzz-raw://b16d3332998e6c52390d1796fae53fe4b5c7e971959b10166007ace5b1de226f",
+				"dweb:/ipfs/QmRzZGKsAPUcY44XCaeqwEfaTcwRL96RzgbkZ9ttRn7JKL"
+			]
+		},
+		"@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+			"keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
 			]
 		}
 	},

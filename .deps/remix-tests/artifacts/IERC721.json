@@ -57,6 +57,7 @@
 			"safeTransferFrom(address,address,uint256)": "42842e0e",
 			"safeTransferFrom(address,address,uint256,bytes)": "b88d4fde",
 			"setApprovalForAll(address,bool)": "a22cb465",
+			"supportsInterface(bytes4)": "01ffc9a7",
 			"transferFrom(address,address,uint256)": "23b872dd"
 		}
 	},
@@ -302,6 +303,25 @@
 			"name": "setApprovalForAll",
 			"outputs": [],
 			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes4",
+					"name": "interfaceId",
+					"type": "bytes4"
+				}
+			],
+			"name": "supportsInterface",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
 			"type": "function"
 		},
 		{
