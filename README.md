@@ -24,7 +24,7 @@ Set Up Your Development Environment:
 
 
 5. Truffle is a development framework that simplifies the creation and deployment of smart contracts.
-   - Create a new project using Truffle and organize your contracts, migrations, and tests.
+    - Create a new project using Truffle and organize your contracts, migrations, and tests.
 
 6. Progress to more complex contracts, such as multi-signature wallets, decentralized applications (dApps), or decentralized finance (DeFi) protocols.
 
