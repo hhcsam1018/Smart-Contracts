@@ -1,0 +1,531 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[]",
+						"name": "ids",
+						"type": "uint256[]"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[]",
+						"name": "values",
+						"type": "uint256[]"
+					}
+				],
+				"name": "TransferBatch",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "TransferSingle",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "URI",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "accounts",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "ids",
+						"type": "uint256[]"
+					}
+				],
+				"name": "balanceOfBatch",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					}
+				],
+				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "ids",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "mintBatch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "ids",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeBatchTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "uri",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"events": {
+				"ApprovalForAll(address,address,bool)": {
+					"details": "批量授权事件 当`account`将所有代币授权给`operator`时释放"
+				},
+				"TransferBatch(address,address,address,uint256[],uint256[])": {
+					"details": "多类代币转账事件 ids和values为转账的代币种类和数量数组"
+				},
+				"TransferSingle(address,address,address,uint256,uint256)": {
+					"details": "单类代币转账事件 当`value`个`id`种类的代币被`operator`从`from`转账到`to`时释放."
+				},
+				"URI(string,uint256)": {
+					"details": "当`id`种类的代币的URI发生变化时释放，`value`为新的URI"
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"balanceOf(address,uint256)": {
+					"details": "持仓查询，返回`account`拥有的`id`种类的代币的持仓量"
+				},
+				"isApprovedForAll(address,address)": {
+					"details": "批量授权查询，如果授权地址`operator`被`account`授权，则返回`true` 见 {setApprovalForAll}函数."
+				},
+				"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)": {
+					"details": "批量安全转账，将`amounts`数组单位的`ids`数组种类代币从`from`转账到`to` 释放 {TransferSingle} 事件. 要求: - to 不能是0地址. - from拥有足够的持仓量，且调用者拥有授权 - 如果 to 是智能合约, 他必须支持 IERC1155Receiver-onERC1155BatchReceived. - ids和amounts数组长度相等"
+				},
+				"safeTransferFrom(address,address,uint256,uint256,bytes)": {
+					"details": "安全轉賬，將`amount`單位的`id`種類代幣從`from`轉賬到`to` 釋放 {TransferSingle} 事件. 要求: - to 不能是0地址. - from擁有足夠的持倉量，且調用者擁有授權 - 如果 to 是智能合約, 他必須支持 IERC1155Receiver-onERC1155Received."
+				},
+				"setApprovalForAll(address,bool)": {
+					"details": "批量授权，将调用者的代币授权给`operator`地址。 释放{ApprovalForAll}事件."
+				},
+				"supportsInterface(bytes4)": {
+					"details": "如果合约实现了查询的`interfaceId`，则返回true 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"balanceOfBatch(address[],uint256[])": {
+					"notice": "-.`accounts` 和 `ids` 數組長度相等"
+				},
+				"uri(uint256)": {
+					"notice": "返回ERC1155的id種類代幣的uri，存儲metadata，類似ERC721的tokenURI."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/remix-tests/ERC1155/BAYC1155.sol": "BAYC1155"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/remix-tests/ERC1155/BAYC1155.sol": {
+			"keccak256": "0xe3374384f3bc0e20a2962ec23225c60535500bec314f619b8b37c114431f3bd3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8fa659bbb30ec0446af58424bb10a42b0a983179f1e30b04ae6d52b149162528",
+				"dweb:/ipfs/QmcuLw6pWxSRhHn74mxkBHe5oYCv2LNbhEA7LpfiwfMtUF"
+			]
+		},
+		".deps/remix-tests/ERC1155/ERC1155.sol": {
+			"keccak256": "0xf5cfa05f4babb0c8585d42991d328943bf09eca7f63c3f8a9864bc46b0db2190",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fe77c53c46c70a2680e7d60b7cf1bb3ffb1b4e70881cade1eba7730025494de5",
+				"dweb:/ipfs/QmQj1DpFW9e1to5poMoT1uLxhZfammy7cnYTr511MDDoR6"
+			]
+		},
+		".deps/remix-tests/ERC1155/IERC1155.sol": {
+			"keccak256": "0xa8730ae696e2646c771021a0d12bfdf50540f3f93530f6a90ecf00cbdf919e0e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b657db6fdf436c278938b6f92b778d7227f12fa58c5ee6ee5178ee6b26c94b1b",
+				"dweb:/ipfs/QmWAptXWiN4mdvw3g6nnZtyyJj69R1YE2e4JCLKSfw9hwX"
+			]
+		},
+		".deps/remix-tests/ERC1155/IERC1155MetadataURI.sol": {
+			"keccak256": "0xafd5122022094a63b853bdbb039e1f3aa5618426194007c7bc6010511aa74ee3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d3c0e84749ee37aeec470409353f8b17ce19ede6ed86042de2c9093c785ad837",
+				"dweb:/ipfs/QmRFFqGpntJyehA1yXBAbzhCxGFFgjBJkdcGWAVPF4mxXf"
+			]
+		},
+		".deps/remix-tests/ERC1155/IERC1155Receiver.sol": {
+			"keccak256": "0x5d791f82ca3dbdcdba42c3320f0b6a08f1d510d2a28ce69d192f0b236d5189f4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4253d34fe21c7032e5dcb84ee9cde8a6727d23b39a53adc9d90157ef5829c018",
+				"dweb:/ipfs/QmQJmPE5etuJx61J6zUH4iMbCTKTtjXRjh5Wy27d5qVikR"
+			]
+		},
+		".deps/remix-tests/bayc/Address.sol": {
+			"keccak256": "0x38c1725e876164847870694fdc6fe7fcc98b59ca8fb2e2f450ff11c71354a6c4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://07b8f9227313a938bed93cf68511aaef2abb7bb4dcec81b676ad9c1d0db71c27",
+				"dweb:/ipfs/Qmapjoe4sXur4oBF5N2MUgvWE8CzytBS9sshJfVpQdiFYu"
+			]
+		},
+		".deps/remix-tests/bayc/IERC165.sol": {
+			"keccak256": "0x6cec968f77076fe2b6cddf6a5e0727f047387db5e0249e5e3d12ed8eca288b5d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d1be8bcab38595ee364bac33124d6a8c489caae78c4fac0a02a5c597947e15db",
+				"dweb:/ipfs/Qmd6V1NUkadDkUGTDNji43JZwKhtZaULGfoeS2ZyQMZi63"
+			]
+		},
+		".deps/remix-tests/bayc/String.sol": {
+			"keccak256": "0xefcdee4c829d0598d8a36bae25315c5259b803c9f4d0ff80255da9bdbe06b331",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8debb132a831f515303a80cb0f0fcfc1d792635f6c52089d0e1537c01532d1e1",
+				"dweb:/ipfs/QmdUAiCYXAD5QZNCK9Fp1Ha2D7cqTWfLigCA3KjDyF2qGP"
+			]
+		}
+	},
+	"version": 1
+}

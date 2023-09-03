@@ -27,7 +27,11 @@
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "如果合约实现了查询的`interfaceId`，则返回true 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]"
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -38,7 +42,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/remix-tests/NFT.sol": "IERC165"
+			".deps/remix-tests/IERC165.sol": "IERC165"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -52,12 +56,12 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/remix-tests/NFT.sol": {
-			"keccak256": "0x034c6ada0f6e880b5c00daa4764a9ba0b6df75c540018f2275eab372ab11d1ce",
+		".deps/remix-tests/IERC165.sol": {
+			"keccak256": "0x6cec968f77076fe2b6cddf6a5e0727f047387db5e0249e5e3d12ed8eca288b5d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://212ee9722efb9f9135e3b0d99b1da5463e69fad3d9c55d22602c02a642e2c8dc",
-				"dweb:/ipfs/QmRhfWkh8ioD1DfdzuJZT5UQJB1NuzpEDzf23NxAdJpHge"
+				"bzz-raw://d1be8bcab38595ee364bac33124d6a8c489caae78c4fac0a02a5c597947e15db",
+				"dweb:/ipfs/Qmd6V1NUkadDkUGTDNji43JZwKhtZaULGfoeS2ZyQMZi63"
 			]
 		}
 	},

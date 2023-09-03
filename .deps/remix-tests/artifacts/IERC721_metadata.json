@@ -292,10 +292,11 @@
 			}
 		],
 		"devdoc": {
+			"details": "ERC721标准接口.",
 			"kind": "dev",
 			"methods": {
 				"supportsInterface(bytes4)": {
-					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+					"details": "如果合约实现了查询的`interfaceId`，则返回true 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]"
 				}
 			},
 			"version": 1
@@ -308,7 +309,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/remix-tests/Interface.sol": "IERC721"
+			".deps/remix-tests/IERC721.sol": "IERC721"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -322,20 +323,20 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/remix-tests/Interface.sol": {
-			"keccak256": "0xdaf4d038cfbfcd73cb710df96acd07f0b4091d1f55ae8f0589bc508ac56eb21a",
+		".deps/remix-tests/IERC165.sol": {
+			"keccak256": "0x6cec968f77076fe2b6cddf6a5e0727f047387db5e0249e5e3d12ed8eca288b5d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b16d3332998e6c52390d1796fae53fe4b5c7e971959b10166007ace5b1de226f",
-				"dweb:/ipfs/QmRzZGKsAPUcY44XCaeqwEfaTcwRL96RzgbkZ9ttRn7JKL"
+				"bzz-raw://d1be8bcab38595ee364bac33124d6a8c489caae78c4fac0a02a5c597947e15db",
+				"dweb:/ipfs/Qmd6V1NUkadDkUGTDNji43JZwKhtZaULGfoeS2ZyQMZi63"
 			]
 		},
-		"@openzeppelin/contracts/utils/introspection/IERC165.sol": {
-			"keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+		".deps/remix-tests/IERC721.sol": {
+			"keccak256": "0x8f4cfdb3f9efc957f5fab07cd07b3d38eb09820a3b0052ce585f6f1a4d1da1c1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
-				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+				"bzz-raw://27ed9425d93805fa37e297f514c04e3f0639b9930a096b5c41db9cb83d22503c",
+				"dweb:/ipfs/QmVAJU8L1GR5iJBJucKFGeZDE1okVDLtXJFv3gA85sr1mF"
 			]
 		}
 	},

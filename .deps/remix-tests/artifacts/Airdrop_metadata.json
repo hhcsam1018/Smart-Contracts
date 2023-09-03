@@ -1,0 +1,92 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"multiTransferToken(address,address[],uint256[])": {
+					"notice": "_token 轉賬的ERC20代幣地址 _addresses 空投地址數組 _amounts 代幣數量數組（每個地址的空投數量）"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/remix-tests/Airdrop.sol": "Airdrop"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/remix-tests/Airdrop.sol": {
+			"keccak256": "0xada249be0332ae26a89f127af6553c44e288be82206fbf1f5e824b1360ae9bf0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7151f9f63efccf217d42747b8bfbcbc46763ccc1dd4e812bd9bb4795dfbecb4f",
+				"dweb:/ipfs/QmNrRtSw9Mqu8ez9Bq5KdEr1c5jZYCtV5oWTr8HywBhZyM"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/remix-tests/bayc/String.sol": "Strings"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/remix-tests/bayc/String.sol": {
+			"keccak256": "0xefcdee4c829d0598d8a36bae25315c5259b803c9f4d0ff80255da9bdbe06b331",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8debb132a831f515303a80cb0f0fcfc1d792635f6c52089d0e1537c01532d1e1",
+				"dweb:/ipfs/QmdUAiCYXAD5QZNCK9Fp1Ha2D7cqTWfLigCA3KjDyF2qGP"
+			]
+		}
+	},
+	"version": 1
+}

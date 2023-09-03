@@ -1,0 +1,216 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_messageHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "getEthSignedMessageHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getMessageHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_ethSignedMessageHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "recoverSigner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "sig",
+						"type": "bytes"
+					}
+				],
+				"name": "splitSignature",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint8",
+						"name": "v",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_signer",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					}
+				],
+				"name": "verify",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/remix-tests/Signature.sol": "VerifySignature"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/remix-tests/Signature.sol": {
+			"keccak256": "0x92027db1039cb5b49203bf9fa872b552b3ecfdd9c67d764ed7fbfeede292d771",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5ca355e69e8319ce11ae1a8221a4424f9f54660cf239c6aae35aa71bd21e6ed1",
+				"dweb:/ipfs/QmY5f4JnW24kaw3xwh13Dd1vnPvht15uR8yBdDTMjNRKcQ"
+			]
+		},
+		".deps/remix-tests/bayc/Address.sol": {
+			"keccak256": "0x38c1725e876164847870694fdc6fe7fcc98b59ca8fb2e2f450ff11c71354a6c4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://07b8f9227313a938bed93cf68511aaef2abb7bb4dcec81b676ad9c1d0db71c27",
+				"dweb:/ipfs/Qmapjoe4sXur4oBF5N2MUgvWE8CzytBS9sshJfVpQdiFYu"
+			]
+		},
+		".deps/remix-tests/bayc/ERC721.sol": {
+			"keccak256": "0x82545616e0d07977df4a2d19a87db6eeb851b10e98998bd1af66c9307f963646",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://370660234115544cfcc39edfc88d4a8bad2692485635db467ec61f9c2ebe39cc",
+				"dweb:/ipfs/QmXYpBrAgvGZHeoQ8aD6XfM89W7fSMQHL3zEhU1kSuPzW2"
+			]
+		},
+		".deps/remix-tests/bayc/IERC165.sol": {
+			"keccak256": "0x6cec968f77076fe2b6cddf6a5e0727f047387db5e0249e5e3d12ed8eca288b5d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d1be8bcab38595ee364bac33124d6a8c489caae78c4fac0a02a5c597947e15db",
+				"dweb:/ipfs/Qmd6V1NUkadDkUGTDNji43JZwKhtZaULGfoeS2ZyQMZi63"
+			]
+		},
+		".deps/remix-tests/bayc/IERC721.sol": {
+			"keccak256": "0x8f4cfdb3f9efc957f5fab07cd07b3d38eb09820a3b0052ce585f6f1a4d1da1c1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://27ed9425d93805fa37e297f514c04e3f0639b9930a096b5c41db9cb83d22503c",
+				"dweb:/ipfs/QmVAJU8L1GR5iJBJucKFGeZDE1okVDLtXJFv3gA85sr1mF"
+			]
+		},
+		".deps/remix-tests/bayc/String.sol": {
+			"keccak256": "0xefcdee4c829d0598d8a36bae25315c5259b803c9f4d0ff80255da9bdbe06b331",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8debb132a831f515303a80cb0f0fcfc1d792635f6c52089d0e1537c01532d1e1",
+				"dweb:/ipfs/QmdUAiCYXAD5QZNCK9Fp1Ha2D7cqTWfLigCA3KjDyF2qGP"
+			]
+		}
+	},
+	"version": 1
+}

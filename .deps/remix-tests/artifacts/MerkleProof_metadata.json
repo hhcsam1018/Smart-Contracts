@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "驗證Merkle樹的合約. proof可以用JavaScript庫生成： https://github.com/miguelmota/merkletreejs[merkletreejs]. 注意: hash用keccak256，並且開啟pair sorting （排序）. javascript例子見 `https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/test/utils/cryptography/MerkleProof.test.js`.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/remix-tests/MerkleTree.sol": "MerkleProof"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/remix-tests/MerkleTree.sol": {
+			"keccak256": "0x8cd1ebe6ff0d70db6b28cd84c6854c2583a81e31b0434520aa098bd26cb9faa2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3c5c5634e9117804a04febcdc6b4f0e6ee791357c1894e78d2339ba7d2f2bd1a",
+				"dweb:/ipfs/QmU1Q5LAiT5wqhbqLQM1c8J33J88txi3N5QmoiYC9yH1tK"
+			]
+		},
+		".deps/remix-tests/bayc/Address.sol": {
+			"keccak256": "0x38c1725e876164847870694fdc6fe7fcc98b59ca8fb2e2f450ff11c71354a6c4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://07b8f9227313a938bed93cf68511aaef2abb7bb4dcec81b676ad9c1d0db71c27",
+				"dweb:/ipfs/Qmapjoe4sXur4oBF5N2MUgvWE8CzytBS9sshJfVpQdiFYu"
+			]
+		},
+		".deps/remix-tests/bayc/ERC721.sol": {
+			"keccak256": "0x82545616e0d07977df4a2d19a87db6eeb851b10e98998bd1af66c9307f963646",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://370660234115544cfcc39edfc88d4a8bad2692485635db467ec61f9c2ebe39cc",
+				"dweb:/ipfs/QmXYpBrAgvGZHeoQ8aD6XfM89W7fSMQHL3zEhU1kSuPzW2"
+			]
+		},
+		".deps/remix-tests/bayc/IERC165.sol": {
+			"keccak256": "0x6cec968f77076fe2b6cddf6a5e0727f047387db5e0249e5e3d12ed8eca288b5d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d1be8bcab38595ee364bac33124d6a8c489caae78c4fac0a02a5c597947e15db",
+				"dweb:/ipfs/Qmd6V1NUkadDkUGTDNji43JZwKhtZaULGfoeS2ZyQMZi63"
+			]
+		},
+		".deps/remix-tests/bayc/IERC721.sol": {
+			"keccak256": "0x8f4cfdb3f9efc957f5fab07cd07b3d38eb09820a3b0052ce585f6f1a4d1da1c1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://27ed9425d93805fa37e297f514c04e3f0639b9930a096b5c41db9cb83d22503c",
+				"dweb:/ipfs/QmVAJU8L1GR5iJBJucKFGeZDE1okVDLtXJFv3gA85sr1mF"
+			]
+		},
+		".deps/remix-tests/bayc/String.sol": {
+			"keccak256": "0xefcdee4c829d0598d8a36bae25315c5259b803c9f4d0ff80255da9bdbe06b331",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8debb132a831f515303a80cb0f0fcfc1d792635f6c52089d0e1537c01532d1e1",
+				"dweb:/ipfs/QmdUAiCYXAD5QZNCK9Fp1Ha2D7cqTWfLigCA3KjDyF2qGP"
+			]
+		}
+	},
+	"version": 1
+}
